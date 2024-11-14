@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        "screen-2xl": "1520px",
+      },
       fontFamily: {
         angel: ['"Angel Rhapsody"', "sans-serif"],
         satoshi: ["Satoshi", "sans-serif"],
@@ -15,6 +18,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        mutedBackground: "var(--background-muted)",
         primary: {
           DEFAULT: "var(--primary)",
           foreground: "var(--primary-foreground)",
@@ -26,6 +30,16 @@ export default {
         overlay: {
           DEFAULT: "var(--overlay-bg)",
         },
+        destructive: {
+          DEFAULT: "var(--destructive)",
+          foreground: "var(--destructive-foreground)",
+        },
+      },
+      borderRadius: {
+        "4xl": "var(--radius)",
+      },
+      backgroundImage: {
+        header: "url('/images/bg-header.png')",
       },
     },
   },
