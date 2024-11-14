@@ -14,7 +14,10 @@ const Container = ({ delay = 0.2, children, className }: ContainerProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false }}
       transition={{ delay: delay, duration: 0.4, ease: "easeInOut" }}
-      className={cn("w-full h-full max-w-screen-2xl mx-auto", className)}
+      className={cn(
+        "w-full h-full max-w-screen-2xl mx-auto p-6 xl:p-0",
+        className
+      )}
     >
       {children}
     </motion.div>

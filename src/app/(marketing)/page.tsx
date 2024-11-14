@@ -1,10 +1,11 @@
 import Wrapper from "@/components/global/wrapper";
+import Header from "@/components/homepage/header/header";
 
 export default function Home() {
   return (
-    <section className="w-full relative flex items-center justify-center flex-col px-6 md:px-0 py-6">
+    <section className="w-full relative flex items-center justify-center flex-col">
       <Wrapper>
-        <div className=""></div>
+        <Header />
       </Wrapper>
     </section>
   );

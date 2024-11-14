@@ -38,8 +38,8 @@
     --primary: #db9f6a;
     --primary-foreground: #483524;
 
-    --secondary: #1e1c17;
-    --secondary: #fff4eb;
+    --secondary: #12100c;
+    --secondary-foreground: #fff4eb;
 
     --radius: 2rem;
 
@@ -47,6 +47,9 @@
 
     --destructive: #e04e4e;
     --destructive-foreground: #fff4eb;
+
+    --muted: #a0a0a0;
+    --accent: #f39c12;
   }
 }
 
