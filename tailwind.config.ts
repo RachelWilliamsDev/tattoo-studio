@@ -34,12 +34,18 @@ export default {
           DEFAULT: "var(--destructive)",
           foreground: "var(--destructive-foreground)",
         },
+        muted: {
+          DEFAULT: "var(--muted)",
+        },
+        accent: {
+          DEFAULT: "var(--accent)",
+        },
       },
       borderRadius: {
         "4xl": "var(--radius)",
       },
       backgroundImage: {
-        header: "url('/images/bg-header.png')",
+        header: "url('/assets/bg-header.png')",
       },
     },
   },

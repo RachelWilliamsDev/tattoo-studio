@@ -15,7 +15,7 @@ const Navbar = () => {
   const linkRefs = useAnnotatedLinks(navigation, pathname, !isOpen);
 
   return (
-    <header className="sticky top-0 inset-x-0 z-[999999] w-full px-6 md:px-0">
+    <header className="fixed top-0 inset-x-0 z-[1000] w-full px-6 xl:px-0">
       <div
         className={cn(
           "flex items-center justify-between mx-auto w-full md:max-w-screen-2xl h-[104px] bg-mutedBackground mt-[50px] backdrop-blur-[10px]",
