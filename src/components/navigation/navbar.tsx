@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className="flex flex-row justify-between md:justify-normal w-full md:w-auto">
             <Link href="/" passHref>
               <Image
-                src="/assets/company/star.svg"
+                src="/assets/company/Star.svg"
                 width={70}
                 height={70}
                 alt="Tattoo Studio Logo"
