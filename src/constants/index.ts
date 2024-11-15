@@ -52,3 +52,30 @@ export const testimonials: TestimonialProps[] = [
     image: "/assets/testimonials/adam.png",
   },
 ];
+
+export const logos: LogoProps[] = [
+  {
+    name: "Layers",
+    image: "/assets/logos/layers.svg",
+  },
+  {
+    name: "Sisyphus",
+    image: "/assets/logos/sisyphus.svg",
+  },
+  {
+    name: "Circooles",
+    image: "/assets/logos/circooles.svg",
+  },
+  {
+    name: "Catalog",
+    image: "/assets/logos/catalog.svg",
+  },
+  {
+    name: "Quotient",
+    image: "/assets/logos/quotient.svg",
+  },
+  {
+    name: "Hourglass",
+    image: "/assets/logos/hourglass.svg",
+  },
+];

@@ -5,12 +5,12 @@ import React from "react";
 const textVariants = cva("whitespace-pre-wrap", {
   variants: {
     size: {
-      sm: "text-lg",
-      base: "text-xl",
-      lg: "text-2xl",
-      xl: "text-[32px]",
-      "2xl": "text-[64px]",
-      "3xl": "text-[112px]",
+      sm: "text-sm md:text-lg",
+      base: "text-base md:text-xl",
+      lg: "text-lg md:text-2xl",
+      xl: "text-2xl md:text-[32px]",
+      "2xl": "text-[40px] md:text-[64px]",
+      "3xl": "text-[80px] md:text-[112px]",
     },
     weight: {
       regular: "font-normal",

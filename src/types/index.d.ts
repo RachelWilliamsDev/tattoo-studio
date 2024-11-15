@@ -8,3 +8,8 @@ declare type TestimonialProps = {
   body: string;
   image: string;
 };
+
+declare type LogoProps = {
+  name: string;
+  image: string;
+};
