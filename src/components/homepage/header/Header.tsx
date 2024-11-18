@@ -1,5 +1,5 @@
 "use client";
-import Container from "../../global/Container";
+import Container from "@/components/global/Container";
 import LogoSection from "../LogoSection";
 import BookVisitButton from "./BookVisitButton";
 import HeaderText from "./HeaderText";
