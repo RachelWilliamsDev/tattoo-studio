@@ -1,10 +1,10 @@
 "use client";
-import Container from "../../global/container";
-import LogoSection from "../logoSection";
-import BookVisitButton from "./bookVisitButton";
-import HeaderText from "./headerText";
-import Hero from "./hero";
-import OpeningHours from "./openingHours";
+import Container from "../../global/Container";
+import LogoSection from "../LogoSection";
+import BookVisitButton from "./BookVisitButton";
+import HeaderText from "./HeaderText";
+import Hero from "./Hero";
+import OpeningHours from "./OpeningHours";
 const Header = () => {
   return (
     <header className="relative w-full h-full bg-header bg-cover bg-center space-y-20 md:space-y-0">

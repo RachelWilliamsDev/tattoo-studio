@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Text } from "@/components/ui/text";
+import { Button } from "@/components/ui/Button";
+import { Text } from "@/components/ui/Text";
 import AccessTime from "../../../../public/assets/icons/access_time";
 
 const OpeningHours = () => {
