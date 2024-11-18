@@ -9,6 +9,7 @@ const Hero = () => {
         height={1019}
         alt="hero image"
         className=" w-full max-w-[945px object-contain"
+        priority
       />
     </div>
   );

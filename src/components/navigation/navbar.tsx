@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Button } from "../ui/button";
+import { Button } from "../ui/Button";
 import MobileNav from "./mobileNav";
 
 const Navbar = () => {

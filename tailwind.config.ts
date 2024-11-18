@@ -16,7 +16,10 @@ export default {
         satoshi: ["Satoshi", "sans-serif"],
       },
       colors: {
-        background: "var(--background)",
+        background: {
+          DEFAULT: "var(--background)",
+          darker: "var(--background-darker)",
+        },
         foreground: "var(--foreground)",
         mutedBackground: "var(--background-muted)",
         primary: {
@@ -46,6 +49,7 @@ export default {
       },
       backgroundImage: {
         header: "url('/assets/bg-header.png')",
+        contact: "url('/assets/bg-contact.png')",
       },
     },
   },

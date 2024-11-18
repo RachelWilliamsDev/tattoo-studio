@@ -1,7 +1,7 @@
 import ButtonOverlay from "../../../../public/assets/icons/button-overlay";
 import Diamond from "../../../../public/assets/icons/diamond";
 import Triangle from "../../../../public/assets/icons/triangle";
-import { Button } from "../../ui/button";
+import { Button } from "../../ui/Button";
 
 const BookVisitButton = () => {
   return (
