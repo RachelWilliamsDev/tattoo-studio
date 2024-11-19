@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Text } from "@/components/ui/Text";
-import AccessTime from "../../../../public/assets/icons/access_time";
+import AccessTime from "../../../../public/assets/icons/access-time";
 
 const OpeningHours = () => {
   return (
