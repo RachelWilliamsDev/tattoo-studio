@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
 
 const useIsLgScreen = () => {
-  const [isLg, setIsLg] = useState(false);
+  const [isLg, setIsLg] = useState(
+    typeof window !== "undefined" ? window.innerWidth >= 1024 : false
+  );
 
   useEffect(() => {
     const handleResize = () => {
-      setIsLg(window.innerWidth >= 1024); // lg breakpoint is 1024px
+      setIsLg(window.innerWidth >= 1024);
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); // Check on mount
+    handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);

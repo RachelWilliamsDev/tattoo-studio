@@ -1,10 +1,4 @@
-interface OctagonProps {
-  src: string;
-  width?: string;
-  height?: string;
-  id: string;
-  animateStroke?: boolean;
-}
+import { useEffect, useState } from "react";
 
 const Octagon = ({
   src,
@@ -13,9 +7,19 @@ const Octagon = ({
   id,
   animateStroke = false,
 }: OctagonProps) => {
+  const [isClient, setIsClient] = useState(false); // Track client-side rendering
+
+  useEffect(() => {
+    setIsClient(true); // Set after the component mounts (client-side)
+  }, []);
+
+  // Fallback width and animation during SSR
+  const clientWidth = isClient ? width : "200"; // Default width for SSR
+  const clientAnimateStroke = isClient ? animateStroke : false; // Disable animation on SSR
+
   return (
     <svg
-      width={width}
+      width={clientWidth}
       height={height}
       viewBox="0 0 214 214"
       fill="none"
@@ -27,7 +31,7 @@ const Octagon = ({
         fill={`url(#${id})`}
         stroke="#EDDCCE"
         strokeWidth="3"
-        className={animateStroke ? "animate-stroke-pulse" : ""}
+        className={clientAnimateStroke ? "animate-stroke-pulse" : ""}
       />
       <defs>
         <pattern
@@ -46,22 +50,17 @@ const Octagon = ({
         />
       </defs>
       <style>
-        {animateStroke &&
-          `
+        {`
           @keyframes pulse-stroke {
-            0% {
-              stroke: #EDDCCE;
-            }
-            50% {
-              stroke: #1e1c17;
-            }
-            100% {
-              stroke: #EDDCCE;
-            }
+            0% { stroke: #EDDCCE; }
+            50% { stroke: #1e1c17; }
+            100% { stroke: #EDDCCE; }
           }
 
-          .animate-stroke-pulse {
-            animation: pulse-stroke 4s infinite;
+          ${
+            clientAnimateStroke
+              ? ".animate-stroke-pulse { animation: pulse-stroke 4s infinite; }"
+              : ""
           }
         `}
       </style>
