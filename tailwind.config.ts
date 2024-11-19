@@ -51,6 +51,7 @@ export default {
         header: "url('/assets/bg-header.png')",
         contact: "url('/assets/bg-contact.png')",
         testimonials: "url('/assets/bg-testimonials.png')",
+        faq: "url('/assets/bg-faq.png')",
       },
     },
   },

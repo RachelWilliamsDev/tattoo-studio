@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 import { Text } from "@/components/ui/Text";
 import { testimonials as clients } from "@/constants";
 import useIsLgScreen from "@/hooks/useIsLgScreen";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import ArrowIcon from "../../../../public/assets/icons/arrow";
 import Client from "../../../../public/assets/testimonials/Octagon";
 
@@ -60,8 +60,17 @@ const Testimonials = () => {
   const { testimonials, shiftTestimonials, reorderTestimonials } =
     useCarousel(clients);
 
+  const [isClient, setIsClient] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+
   const isLg = useIsLgScreen();
-  const activeIndex = isLg ? 2 : 0;
+
+  useEffect(() => {
+    setIsClient(true);
+    setActiveIndex(isLg ? 2 : 0);
+  }, [isLg]);
+
+  if (!isClient) return null;
 
   return (
     <section className="relative w-full h-full bg-testimonials bg-cover bg-center py-10 md:py-20">
@@ -73,8 +82,8 @@ const Testimonials = () => {
               <div
                 key={client.name}
                 onClick={() => reorderTestimonials(client, isLg)}
-                className={`cursor-pointer text-center ${
-                  i === activeIndex ? "hover:scale-110" : "hover:scale-105"
+                className={`cursor-pointer text-center hover:scale-${
+                  i === activeIndex ? "110" : "105"
                 } transition-transform duration-300`}
               >
                 <Client
