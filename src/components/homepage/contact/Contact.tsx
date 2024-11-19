@@ -5,7 +5,7 @@ import TattooCard from "./TattooCard";
 
 const Contact = () => {
   return (
-    <section className="relative w-full h-full bg-contact bg-cover bg-center bg-repeat-y py-20 md:py-40">
+    <section className="relative w-full h-full bg-contact bg-cover bg-center pt-20 md:pt-40 pb-10 md:pb-20">
       <Container>
         <div className="relative max-w-[1520px] xl:max-h-[800px] flex flex-col xl:flex-row gap-y-8 items-center">
           <LeftSection />

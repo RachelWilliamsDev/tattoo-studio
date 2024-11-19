@@ -50,6 +50,7 @@ export default {
       backgroundImage: {
         header: "url('/assets/bg-header.png')",
         contact: "url('/assets/bg-contact.png')",
+        testimonials: "url('/assets/bg-testimonials.png')",
       },
     },
   },

@@ -29,12 +29,12 @@ export const testimonials: TestimonialProps[] = [
   {
     name: "Sophie Lloyd",
     body: "I love the tattoo I got from Tattoo Studio. It's so beautiful and unique. I'm so happy with it.",
-    image: "/assets/testimonials/sophie.png",
+    image: "/assets/testimonials/sophie.jpg",
   },
   {
     name: "Chris Baker",
     body: "I got a tattoo from Tattoo Studio and it's amazing. The artist was so professional and the tattoo looks great.",
-    image: "/assets/testimonials/chris.png",
+    image: "/assets/testimonials/chris.jpg",
   },
   {
     name: "Cardina Stones",
@@ -44,12 +44,12 @@ export const testimonials: TestimonialProps[] = [
   {
     name: "Jennifer Smith",
     body: "Tattoo Studio made me feel at ease with getting my first tattoo. I was so nervous but the artist was so professional and made me feel comfortable.",
-    image: "/assets/testimonials/jennifer.png",
+    image: "/assets/testimonials/jennifer.jpg",
   },
   {
     name: "Adam Jones",
     body: "I got a cover up done at Tattoo Studio and its amazing. You can't even tell there was a tattoo there before.",
-    image: "/assets/testimonials/adam.png",
+    image: "/assets/testimonials/adam.jpg",
   },
 ];
 
