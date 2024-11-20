@@ -22,9 +22,11 @@ export default {
         },
         foreground: "var(--foreground)",
         mutedBackground: "var(--background-muted)",
+        cream: "var(--cream)",
         primary: {
           DEFAULT: "var(--primary)",
           foreground: "var(--primary-foreground)",
+          muted: "var(--primary-muted)",
         },
         secondary: {
           DEFAULT: "var(--secondary)",
@@ -52,6 +54,7 @@ export default {
         contact: "url('/assets/bg-contact.png')",
         testimonials: "url('/assets/bg-testimonials.png')",
         faq: "url('/assets/bg-faq.png')",
+        footer: "url('/assets/bg-footer.png')",
       },
     },
   },
