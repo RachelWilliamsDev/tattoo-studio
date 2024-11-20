@@ -1,11 +1,7 @@
-import type { Metadata } from "next";
+import { SITE_CONFIG } from "@/config";
 import "../styles/globals.css";
 
-export const metadata: Metadata = {
-  title: "Tattoo Studio",
-  description:
-    "Tattoo studio website built from figma design by Giorgi Matsukatovi",
-};
+export const metadata = SITE_CONFIG;
 
 export default function RootLayout({
   children,
