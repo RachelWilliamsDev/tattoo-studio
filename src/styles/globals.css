@@ -37,6 +37,7 @@
 
     --primary: #db9f6a;
     --primary-foreground: #483524;
+    --primary-muted: #db9f6a20;
 
     --secondary: #12100c;
     --secondary-foreground: #fff4eb;
@@ -52,6 +53,8 @@
     --accent: #f39c12;
 
     --background-darker: #1e1c17;
+
+    --cream: #f2e4da;
   }
 }
 

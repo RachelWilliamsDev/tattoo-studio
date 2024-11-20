@@ -37,3 +37,12 @@ declare type OctagonProps = {
   id: string;
   animateStroke?: boolean;
 };
+
+declare type DiamondProps = {
+  size?: string;
+  color?: string;
+};
+
+declare type SubscribeBackgroundProps = {
+  children: React.ReactNode;
+};
