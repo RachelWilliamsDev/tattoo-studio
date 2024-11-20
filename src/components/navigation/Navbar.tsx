@@ -9,7 +9,7 @@ import { useState } from "react";
 import { Button } from "../ui/Button";
 import MobileNav from "./MobileNav";
 
-const Navbar = () => {
+const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const linkRefs = useAnnotatedLinks(navigation, pathname, !isOpen);
@@ -100,4 +100,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;

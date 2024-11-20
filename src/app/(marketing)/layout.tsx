@@ -1,5 +1,5 @@
 import Footer from "@/components/navigation/Footer";
-import Navbar from "@/components/navigation/Navbar";
+import NavBar from "@/components/navigation/NavBar";
 
 interface MarketingLayoutProps {
   children: React.ReactNode;
@@ -8,7 +8,7 @@ interface MarketingLayoutProps {
 const MarketingLayout = ({ children }: MarketingLayoutProps) => {
   return (
     <div className="flex flex-col items-center w-full">
-      <Navbar />
+      <NavBar />
       {children}
       <Footer />
     </div>
